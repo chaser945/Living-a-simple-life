@@ -48,8 +48,9 @@ h3 {
 header {
   background-color: var(--darkWhite);
   text-align: center;
-  padding: 2em 0;
   margin-bottom: 3em;
+  padding: 2em 3em;
+  
 }
 
 nav {
@@ -64,10 +65,10 @@ nav ul {
   flex-direction: column;
   list-style: none;
   padding: 0;
+  margin: 0;
   justify-content: center;
-  gap: 1.5em;
+  gap: .7em;
   font-weight: 700;
-  margin-top: 1.5em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -81,6 +82,10 @@ nav a {
 
 nav a:hover {
   color: #1792d2;
+}
+
+.logo{
+  margin-bottom: 1.5em;
 }
 
 /* CLASSES */
@@ -140,8 +145,8 @@ nav a:hover {
 }
 
 .nav-container {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -191,7 +196,7 @@ nav a:hover {
 }
 
 .recent-article-h2 {
-  margin-top: -1.2em;
+  margin-top: -.3em;
 }
 
 /* ASIDE */
@@ -292,9 +297,12 @@ footer {
     justify-content: space-between;
   }
 
+
   nav ul {
     flex-direction: row;
+    margin: 0;
   }
+
 
   .main-container {
     display: flex;
