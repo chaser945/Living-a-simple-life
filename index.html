@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>Living the Simple Life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/pigeon-clipart.svg" />
+    <script
+      src="https://kit.fontawesome.com/33156537dd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -21,7 +26,23 @@
           <p class="subtitle">A blog exploring minimalism in life</p>
         </div>
 
-        <nav>
+        <!-- Mobile Nav -->
+        <div class="hamburger">
+          <div class="bar bar-first"></div>
+          <div class="bar bar-second"></div>
+          <div class="bar bar-third"></div>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="recentPost.html">Recent posts</a></li>
+          </ul>
+        </nav>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
           <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="about.html">About me</a></li>
@@ -136,6 +157,18 @@
       <h4>Living the Simple Life</h4>
       <p>Copyright 2022</p>
       <p>Coded by Junaid Iqbal</p>
+      <div class="social-icons">
+        <a target="_blank" href="https://github.com/chaser945"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/junaid-iqbal-4764111b8/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
